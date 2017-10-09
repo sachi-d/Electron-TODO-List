@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/sachi-d/simple-electron-todo-list",
+  "repository": "https://github.com/sachi-d/Electron-TODO-List",
   "keywords": [
     "Electron",
     "TODO",

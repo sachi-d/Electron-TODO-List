@@ -3,27 +3,29 @@
     {
       "categoryname": "academic",
       "tasks": [
-        {
-          "task": "DB chptr 1",
-          "completed": false
-        },
-        {
-          "task": "DB chptr 2",
-          "completed": false
-        }
+        "DB chptr 1",
+        "DB chptr 2"
+      ]
+    },
+    {
+      "categoryname": "eacademic",
+      "tasks": [
+        "DB chptr 1",
+        "DB chptr 2"
+      ]
+    },
+    {
+      "categoryname": "acafdemic",
+      "tasks": [
+        "DB chptr 1",
+        "DB chptr 2"
       ]
     },
     {
       "categoryname": "fyp",
       "tasks": [
-        {
-          "task": "task 1",
-          "completed": true
-        },
-        {
-          "task": "task 2",
-          "completed": false
-        }
+        "task 1",
+        "task 2"
       ]
     }
   ]
