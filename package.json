@@ -1,0 +1,26 @@
+{
+  "name": "simple-todo-list",
+  "productName": "Simple TODO List",
+  "version": "1.0.0",
+  "description": "A minimal Electron TODO List application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/sachi-d/simple-electron-todo-list",
+  "keywords": [
+    "Electron",
+    "TODO",
+    "list",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Sachithra Dangalla",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "dependencies": {
+    "electron-json-storage": "^3.1.1"
+  }
+}
