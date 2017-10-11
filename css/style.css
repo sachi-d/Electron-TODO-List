@@ -27,7 +27,7 @@ h1 {
 }
 
 .todolist {
-    background-color: #eeffff;
+    /*background-color: #eeffff;*/
     padding: 20px 20px 10px 20px;
     margin-top: 30px;
 }
@@ -43,7 +43,7 @@ h1 {
 }
 
 li.ui-state-default {
-    color: #fff;
+    /*color: #fff;*/
     border: none;
     border-bottom: 1px solid #ddd;
 }

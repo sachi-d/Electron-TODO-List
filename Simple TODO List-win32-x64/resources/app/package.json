@@ -1,24 +1,24 @@
 {
-  "name": "electron-quick-start",
+  "name": "simple-todo-list",
   "productName": "Simple TODO List",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A minimal Electron TODO List application",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/sachi-d/Electron-TODO-List",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
+    "TODO",
+    "list",
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "Sachithra Dangalla",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "~1.4.15"
+    "electron": "~1.6.2"
   },
   "dependencies": {
     "electron-json-storage": "^3.1.1"
