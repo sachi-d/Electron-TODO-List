@@ -36,6 +36,7 @@ getFile();
 
 $("#add-category-btn").click(function () {
     var newCategory = $("#add-category-name").val();
+    $("#add-category-name").val('');
     var cat = {"categoryname": newCategory, "tasks": []};
     categories.push(cat);
     updateFileAndDisplay();
