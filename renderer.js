@@ -15,7 +15,7 @@ var todoList = $("<div>", {"class": "todolist"});
 var listTitle = $("<h1>");
 
 var inputGroup = $('<div>', {"class": "input-group"});
-
+var inputForm = $('<form>');
 var inputText = $('<input type="text" class="form-control add-todo" placeholder="Add todo">');
 var inputGroupBtnDiv = $('<div>', {"class": "input-group-btn"});
 var inputGroupBtn = $('<button>', {"class": "btn btn-default add-todo-btn", "type": "submit"});
@@ -34,12 +34,13 @@ var categories;
 
 getFile();
 
-$("#add-category-btn").click(function () {
+$("#new-cat-form").submit(function () {
     var newCategory = $("#add-category-name").val();
     $("#add-category-name").val('');
     var cat = {"categoryname": newCategory, "tasks": []};
     categories.push(cat);
     updateFileAndDisplay();
+    return false;
 })
 
 function updateFileAndDisplay() {
@@ -74,19 +75,22 @@ function displayData() {
         inputs.append(inputt);
         var inputgrpbtndiv = inputGroupBtnDiv.clone();
         var inputbtn = inputGroupBtn.clone().attr("id", i + "-input-btn");
-        inputbtn.click(function () {
-            var myId = $(this).attr("id").split("-")[0];
-            var myText = $("#" + myId + "-input").val();
-            categories[myId]["tasks"].push(myText);
 
-            updateFileAndDisplay();
-        })
         inputgrpbtndiv.append(inputbtn.append(inputGroupBtnI.clone()));
         //inputgrpbtndiv.append(inputGroupBtnI.clone());
 
         inputs.append(inputgrpbtndiv);
 
-        list.append(inputs);
+        var formm = inputForm.clone().attr("id", i + "-form");
+        formm.submit(function () {
+            var myId = $(this).attr("id").split("-")[0];
+            var myText = $("#" + myId + "-input").val();
+            categories[myId]["tasks"].push(myText);
+
+            updateFileAndDisplay();
+            return false;
+        })
+        list.append(formm.append(inputs));
 
         var myul = ul.clone();
 
