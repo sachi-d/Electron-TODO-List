@@ -1,6 +1,6 @@
 {
   "name": "simple-todo-list",
-  "productName": "Simple TODO List",
+  "productName": "My TODO List",
   "version": "1.0.0",
   "description": "A minimal Electron TODO List application",
   "main": "main.js",
